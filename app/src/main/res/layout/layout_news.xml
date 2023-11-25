@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/news"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        />
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi Welcome to My World"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/font_medium_size"
+        android:textColor="@color/Black"
+        />
+
+    <TextView
+        android:id="@+id/news_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The text of this app is my newest build.
+I have just started building this app so hopefully I can make a lot of progress in this field and bring you the best apps with the best designs for your loved ones."
+        android:gravity="left"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="@dimen/font_small_size"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 hour ago "
+        android:gravity="right"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="@dimen/font_small_size"
+        />
+
+</LinearLayout>

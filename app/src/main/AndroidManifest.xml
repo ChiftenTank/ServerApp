@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joker.mili">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Sec" />
+        <activity android:name=".Calculator" />
+        <activity android:name=".News" />
+        <activity android:name=".Register" >
+        </activity>
+
+        <activity
+            android:name=".Registering"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".SimpleMenu" />
+        <activity android:name=".Dialog" />
+        <activity android:name=".Splash" />
+        <activity android:name=".Fragment" />
+        <activity android:name=".MyFirst_ViewPager" />
+        <activity android:name=".Animation" />
+        <activity android:name=".Animation_Show" />
+        <activity android:name=".Main_Menu"></activity>
+        <activity android:name=".List_Activity" />
+        <activity android:name=".Recycler_View" />
+        <activity android:name=".Post_View2" />
+        <activity android:name=".Rozbeh" />
+        <activity android:name=".Drawer_Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Setting_DrawerFloatActionButton_Menu"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_contact" android:icon="@drawable/ic_action_contact_phone" android:title="Contact-Us"/>
+    <item android:id="@+id/item_email" android:icon="@drawable/ic_action_email" android:title="Email"/>
+    <item android:id="@+id/item_setting" android:icon="@drawable/ic_action_settings" android:title="Setting"/>
+    <item android:id="@+id/item_share" android:icon="@drawable/ic_action_share" android:title="Share Us"/>
+    <item android:id="@+id/item_exit" android:icon="@drawable/ic_action_power_settings_new" android:title="Exit"/>
+
+</menu>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joker.mili.Register">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/background_pic"
+        android:src="@drawable/back_pic"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/exit_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_exit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/Black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_large_size"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Edit"
+        android:id="@+id/btn_avatar"
+        android:background="@color/Yellow"
+        android:layout_alignBottom="@id/background_pic"
+        android:layout_alignLeft="@id/background_pic"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"/>
+
+   <ImageView
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:id="@+id/edt_avatar"
+       android:src="@drawable/edit_avatar"
+       android:layout_alignRight="@id/btn_avatar"
+       android:layout_alignLeft="@id/btn_avatar"
+       android:layout_above="@id/btn_avatar"
+       />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background_pic">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/user_info"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+         >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:id="@+id/txt_info"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textSize="17sp"
+            android:textColor="@color/Black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_user"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:maxLines="1"
+            android:maxLength="15"
+
+            android:layout_marginLeft="30dp"
+            android:hint="Username"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_pass"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="30dp"
+            android:hint="Password"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:id="@+id/txt_gen"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textSize="17sp"
+            android:textColor="@color/Black"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Man"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Woman"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expertise"
+            android:id="@+id/txt_exp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textSize="17sp"
+            android:textColor="@color/Black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java Script"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHP"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ASP.Net"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/Black"
+            android:background="@color/Yellow"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

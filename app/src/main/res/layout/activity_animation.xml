@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joker.mili.Animation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/animation1"
+                android:id="@+id/img_animation"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alpha_Animation"
+                android:id="@+id/btn_alpha"
+                style="@style/animation_button_prime"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="0"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Translate_Animation"
+                android:id="@+id/btn_translate"
+                style="@style/animation_button_sec"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scale_Animation"
+                android:id="@+id/btn_scale"
+                style="@style/animation_button_prime"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotate_Animation"
+                android:id="@+id/btn_rotate"
+                style="@style/animation_button_sec"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="3"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value_Animator"
+                android:id="@+id/btn_value"
+                style="@style/animation_button_prime"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="4"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animation_Set"
+                android:id="@+id/btn_set"
+                style="@style/animation_button_sec"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="5"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YoYo_Animation"
+                android:id="@+id/btn_yoyo"
+                style="@style/animation_button_prime"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:tag="6"
+                android:layout_marginBottom="10dp"
+                />
+            
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
